@@ -58,7 +58,7 @@ a = 10
 b = 10.0
 c = b
 
-print(a==b, a==c, b==c)
+print(a == b, a == c, b == c)
 print(a is b, a is c, b is c)
 
 # in
@@ -68,19 +68,19 @@ frase = 'Voce eh um palavrao!'
 
 print('palavrao' in frase)
 
-numeros = [1, 5 , 2, 6]
+numeros = [1, 5, 2, 6]
 print(1 in numeros)
 
-numeros = (1, 5 , 2, 6)
+numeros = (1, 5, 2, 6)
 print(1 in numeros)
 
-numeros = {1, 5 , 2, 6}
+numeros = {1, 5, 2, 6}
 print(1 in numeros)
 
 pessoa = {
-    'nome' : 'Pedro',
-    'idade' : 25,
-    'sexo' : 'M'
+    'nome': 'Pedro',
+    'idade': 25,
+    'sexo': 'M'
 }
 
 print('nome' in pessoa)
