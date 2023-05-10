@@ -4,7 +4,7 @@
 print('hello world!', 'Pedro', 1, True, sep='#', end='!!!!')
 print('hello world!', 'Pedro', 1, True, sep='#', end='')
 
-# arquivo = open('nomes.txt', 'w', encoding='utf-8')
+arquivo = open('nomes.txt', 'w', encoding='utf-8')
 
 print(
     'pedro@email.com', 
