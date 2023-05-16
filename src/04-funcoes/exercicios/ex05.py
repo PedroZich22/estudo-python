@@ -29,7 +29,7 @@ def situacao_individuo(imc):
     if imc >= 40:
         return "Perder peso"
 
-
+breakpoint()
 peso = float(input("Digite seu peso: "))
 altura = float(input("Digite sua altura: "))
 

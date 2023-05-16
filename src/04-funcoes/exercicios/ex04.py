@@ -4,6 +4,7 @@ def somar(*numeros):
         soma += numero
     return soma
 
+breakpoint()
 resultado_soma = somar(1, 2, 3, 4, 5, 4)
 
 print("A soma é: ", resultado_soma)
