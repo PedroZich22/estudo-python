@@ -5,7 +5,7 @@ def linha_para_dict(arquivo, lista):
 
     dicionario = {} 
     for i in range(len(lista)):  
-        dicionario[lista[i]] = dados[i].strip("\n")
+        dicionario[lista[i].strip()] = dados[i].strip()
 
     # dicionario = {}
     # dicionario = {lista[0]: dados[0], lista[1]: dados[1], lista[2]: dados[2].strip('\n')}

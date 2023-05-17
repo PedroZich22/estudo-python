@@ -12,7 +12,7 @@ def carregar_dados_alunos(arquivo):
         # adicionar, em forma de dicionario, cada item de cada lista em outra uma lista
         # "dado" percorre os 3 alunos, cada indice de "dado" uma é uma informação q é atribuida a uma chave
         # corrigindo erro de mostrar "\n" com strip()
-        lista.append({"codigo": dado[0], "titulo": dado[1], "responsavel": dado[2].strip('\n')})   
+        lista.append({"codigo": dado[0], "titulo": dado[1], "responsavel": dado[2].strip()})   
 
     return tuple(lista) # retornar lista final com dados da cada aluno em formato de tupla
 
