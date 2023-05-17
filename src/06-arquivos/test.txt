@@ -3,3 +3,7 @@ Java
 Javascript
 Ruby
 C#
+SQL
+C
+C++
+COBOL
