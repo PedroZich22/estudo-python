@@ -1,4 +1,7 @@
 {
+    "editor.fontFamily"JetBrains Mono"
+}
+{
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8"
     },
