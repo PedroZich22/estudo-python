@@ -1,7 +1,9 @@
 {
-    "editor.fontFamily"JetBrains Mono"
-}
-{
+    "editor.fontFamily": "JetBrains Mono",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "files.autoSave": "afterDelay",
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8"
     },
