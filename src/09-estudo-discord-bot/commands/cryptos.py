@@ -6,7 +6,7 @@ class Crypto(commands.Cog):
     
     def __init__(self, bot):
         self.bot = bot
-    
+
     @commands.command(help="Veifica o preço de um par na Binance. Argumentos: moeda base")
     async def binance(self, ctx, coin, base):
         try:

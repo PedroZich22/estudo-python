@@ -1,7 +1,6 @@
 from discord.ext import commands
 from discord.ext.commands.errors import CommandNotFound, MissingRequiredArgument
 
-
 class Manager(commands.Cog):
     """ Mange the bot """
 
@@ -18,7 +17,7 @@ class Manager(commands.Cog):
 
             await message.delete()
 
-        await self.bot.process_commands(message)
+        # await self.bot.process_commands(message)
 
     # discord.ext.commands.errors.MissingRequiredArgument
     # discord.ext.commands.errors.CommandNotFound

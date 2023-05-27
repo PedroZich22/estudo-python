@@ -21,10 +21,8 @@ class Talks(commands.Cog):
     async def secret(self, ctx):
         try:
             await ctx.author.send("Oi")
-            await ctx.author.send("Ola")
-            await ctx.author.send("Oi oi")
         except discord.errors.Forbidden:
-            await ctx.send("Não posso te contar o segredo, habilite receber mnsagens de qualquer pessoa do servidor (Opções > Privacidade)")
+            await ctx.send("Não posso te contar o segredo, habilite receber mensagens de qualquer pessoa do servidor (Opções > Privacidade)")
 
 
 async def setup(bot):
