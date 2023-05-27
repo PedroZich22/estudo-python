@@ -2,12 +2,13 @@
     "editor.fontFamily": "JetBrains Mono",
     "window.zoomLevel": 1,
     "workbench.iconTheme": "catppuccin-macchiato",
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Dracula Soft",
     "files.autoSave": "afterDelay",
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "python.formatting.provider": "none",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": false,
+    "editor.fontLigatures": true,
 }

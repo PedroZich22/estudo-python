@@ -12,7 +12,7 @@ class Pessoa:
 
 pessoa1 = Pessoa(nome="Pedro", email="pedro@email.com")
 pessoa2 = Pessoa(nome="Maria", email="maria@email.com")
-
+ 
 # alterar atributo de classe na instancia (objeto)
 # altera somente para aquela instancia
 pessoa1.especie = "alienigena"
