@@ -14,14 +14,14 @@ async def on_ready():
     await load_cogs(bot)
     await bot.get_cog('Dates').current_time.start()
 
-async def load_cogs(bot):
+async def load_cogs(a):
     for file in os.listdir("src/09-estudo-discord-bot/commands"):
         if file.endswith(".py"):
             cog = file[:-3]
             await bot.load_extension(f"commands.{cog}")
-    
-    await bot.load_extension("manager")
-    await bot.load_extension("tasks.dates")
+
+    await a.load_extension("manager")
+    await a.load_extension("tasks.dates")
 
 
 TOKEN = config("TOKEN")
