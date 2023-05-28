@@ -3,6 +3,7 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from decouple import config
+MY_GUILD = discord.Object(id=1111083976036192400)
 
 intents = discord.Intents.default()
 intents.message_content = True
