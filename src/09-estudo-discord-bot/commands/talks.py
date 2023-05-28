@@ -2,6 +2,11 @@ from discord.ext import commands
 import discord
 from discord import app_commands
 
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
+tree = app_commands.CommandTree(client)
+
 MY_GUILD = discord.Object(id=1111083976036192400)
 
 intents = discord.Intents.default()
@@ -24,11 +29,11 @@ class Talks(commands.Cog):
 
     # !segredo
     @commands.command(name="segredo", help="Envia um segredo no privado. (Não requer argumentos)")
-    async def secret(self, ctx):
+    async def secret(self, interaction: discord.Interaction):
         try:
-            await ctx.author.send("Oi")
+            await interaction.user.dm_channel.send("Oi")
         except discord.errors.Forbidden:
-            await ctx.send("Não posso te contar o segredo, habilite receber mensagens de qualquer pessoa do servidor (Opções > Privacidade)")
+            await interaction.response.send_message("Não posso te contar o segredo, habilite receber mensagens de qualquer pessoa do servidor (Opções > Privacidade)")
 
 
 async def setup(bot):

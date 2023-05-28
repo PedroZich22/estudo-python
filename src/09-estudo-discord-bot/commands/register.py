@@ -68,8 +68,8 @@ class Register(commands.Cog):
         await interaction.response.send_modal(MyModal())
 
 
-    @commands.command(name="listar-alunos", help="Registra um aluno no aluno.txt.")
-    async def list_student(self, ctx):
+    @app_commands.command(name="listar-alunos", description="Registra um aluno no aluno.txt.")
+    async def list_student(self, interaction: discord.Interaction):
 
         with open("src/09-estudo-discord-bot/alunos.txt", "r", encoding='UTF-8') as arquivo:
         
@@ -95,7 +95,7 @@ class Register(commands.Cog):
                 )
                 print(dicionario)
 
-        await ctx.send(embed=embed)
+        await interaction.response.send_message(embed=embed)
 
 async def setup(bot):
     await bot.add_cog(Register(bot), guilds=[MY_GUILD])
