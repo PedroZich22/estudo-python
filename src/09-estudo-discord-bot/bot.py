@@ -1,8 +1,11 @@
+from decouple import config
+import sys
+sys.path.append("C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\estudo-python\\src\\09-estudo-discord-bot\\commands")
 import os
 import discord
-from discord import app_commands
+from discord import ui, app_commands
 from discord.ext import commands
-from decouple import config
+
 MY_GUILD = discord.Object(id=1111083976036192400)
 
 intents = discord.Intents.default()
@@ -16,7 +19,12 @@ bot = commands.Bot(intents=intents, command_prefix="!")
 async def on_ready():
     print(f"Estou pronto! Estou conectado como {bot.user}")
     await load_cogs(bot)
+
+    synced = await bot.tree.sync(guild=MY_GUILD)
+    print(f"Synced {len(synced)} command(s)")
+
     await bot.get_cog('Dates').current_time.start()
+
 
 async def load_cogs(a):
     for file in os.listdir("src/09-estudo-discord-bot/commands"):

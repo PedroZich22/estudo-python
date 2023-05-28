@@ -7,8 +7,12 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8"
     },
-    "python.formatting.provider": "none",
+    "python.formatting.provider": "autopep8",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": false,
+    "python.linting.enabled": true,
     "editor.fontLigatures": true,
+    "python.analysis.extraPaths": [
+        "./src/09-estudo-discord-bot/commands"
+    ],
+    "python.linting.pycodestyleEnabled": false,
 }
